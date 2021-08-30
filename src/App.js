@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// 创建“外壳”组件
+import React, {Component} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// 创建类式组件
+class App extends Component{
+  render(){
+    return(
+      <div>
+        hello react!
+      </div>
+    )
+  }
 }
+// 创建函数式组件
+// function App() {
+//   return (
+//     <div>
+//       Hello World
+//     </div>
+//   );
+// }
 
+// 暴露App组件
 export default App;
